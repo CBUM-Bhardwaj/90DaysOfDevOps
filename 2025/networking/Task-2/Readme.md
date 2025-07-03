@@ -45,4 +45,3 @@ They help you configure firewalls, load balancers, DNS, monitoring tools, CI/CD 
 | ⚙️ Mapped them to real use cases     | CI/CD, server access, DNS, SMTP, HTTPS APIs, monitoring    |
 | 📝 Created reference tables           | Technical + human-friendly explanations                    |
 
-📁 You can include this in:
