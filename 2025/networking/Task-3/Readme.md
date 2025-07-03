@@ -81,3 +81,30 @@ After your instance is running:
 ```bash
 chmod 400 your-key.pem      # Protect your private key
 ssh ec2-user@<your-ip> -i your-key.pem
+```
+
+## 🔍 Verify Access with `curl`
+
+After SSH-ing into your EC2 instance, install a basic web server and test connectivity.
+
+### 🖥️ Inside your EC2 terminal, run:
+
+```bash
+# Install Apache web server
+sudo yum install -y httpd
+
+# Start the web server
+sudo systemctl start httpd
+
+# Enable it on boot
+sudo systemctl enable httpd
+
+# Create a basic web page
+echo "Hello from EC2!" | sudo tee /var/www/html/index.html
+```
+
+
+## 🌐 Then test from your browser:
+```bash
+http://<your-ec2-public-ip>
+```
